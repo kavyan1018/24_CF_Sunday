@@ -54,3 +54,26 @@ high light ==> <mark>
 in paragraph tag we write lorem100 short cut --> then we got a 100 words paragraph
 
 
+Images insert total 2 Ways
+
+ <!-- 1st way to insert image  
+        1st Way is insert image from google
+
+        what is src ?  ==> source
+        what is alt ? ==> altranet
+    -->
+
+ <!-- 
+        2nd way is insert image from download 
+     -->
+
+<br>  ==> To Break cont Line 
+
+&nbsp; for space between text/image/and all about that
+
+// Narendra Modi
+in center img 
+
+line Name Line
+
+50 lines paragraph
