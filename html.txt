@@ -1,5 +1,7 @@
 Press:- Shift + 1 and press enter then u got your Formate
 
+Press :- Alt + z so u can get a one line to paragraph for code
+
 <!DOCTYPE html>
 
 -->Document type html
@@ -77,3 +79,24 @@ in center img
 line Name Line
 
 50 lines paragraph
+
+
+hr --> horizontal rule
+
+ <!-- 
+    Marquee tag– moving text, image, 
+    behavior = “scroll”, “slide”, “alternate”; 
+    direction = “left”, “right”, “up”, “down”; 
+    scrollamount = “20”;  
+    -->
+
+
+How to set background Image ?
+
+--> same as pr image tag 
+
+We can use text tag for change color of all fonts in my website
+
+i want to change ma background color in my website
+
+--> bgcolor     Color Piker website:- https://colorhunt.co/
