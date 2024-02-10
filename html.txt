@@ -100,3 +100,11 @@ We can use text tag for change color of all fonts in my website
 i want to change ma background color in my website
 
 --> bgcolor     Color Piker website:- https://colorhunt.co/
+
+
+
+List Tags 
+
+li => List items
+ol => order List ---> using ==> we can get Numbers by defult using ul tags
+ul => unorder List ---> using ==> we can get dics by defult using ul tags
