@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <th colspan="2">Colspan Column</th>
+        </tr>
+        <tr>
+            <th>Rowspan <br> Cell</th>
+            <th>
+                Cell 2
+                <table border="2px" bgcolor="yellow">
+                    <tr>
+                        <th>Inner Column <br> heading 1</th>
+                        <th>Inner Column <br> heading 2</th>
+                    </tr>
+                    <tr>
+                        <th bgcolor="gray">Inner Data <br> Cell 1</th>
+                        <th bgcolor="lightgreen">
+                            <table border="2px" bgcolor="">
+                                <br>
+                                    <table border="2px" bgcolor="lightpink">
+                                        <tr>
+                                            <td>Inner Most <br>Column Heading 1</td>
+                                            <td>Inner Most <br>Column Heading 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">Inner Most Date <br> Cell 1</td>
+                                            <td bgcolor="orange">Inner Most Date <br> Cell 2</td>    
+                                        </tr>
+                                    </table>
+                            <br>
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
