@@ -23,7 +23,8 @@ Press :- Alt + z so u can get a one line to paragraph for code
 
 </head>
 <body>
-            what we want to show in my web we Write in Body all of Code    
+            what we want to show in my web we Write in Body... 
+            all of Code    
 </body>
 </html>
 
