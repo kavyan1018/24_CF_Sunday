@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe</title>
+    <title>Document</title>
 </head>
-<body background="" text="">
-    
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/023/628/609/small/coffee-shop-logo-design-png.png" alt="" width="200px" height="170px">
+<body>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/023/628/609/small/coffee-shop-logo-design-png.png" alt="" width="170px" height="150px">
 
     <hr size="3px" color="blue">
 
@@ -24,27 +23,49 @@
 
     <hr size="3px" color="blue">
 
-    <!-- <marquee behavior="scroll" direction="right" scrollamount="20"> -->
 
-        <img src="images/food1.jpg" alt="Food 1" height="170px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <img src="images/food2.jpg" alt="Food 2" height="170px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <img src="images/Food3.jpg" alt="Food 3" height="170px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <img src="images/food4.jpg" alt="Food 4" height="170px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <img src="images/food5.jpg" alt="Food 5" height="170px">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </marquee>
+    <!-- list tags 
+        ol ==> order list
+        ul ==> un-order list
+        li ==> list items
+    -->
 
-    <!-- <center>
-        <img src="" alt="Veg logo">
-        <img src="" alt="jain logo">
-    </center> -->
+    <!-- ul ==> un-order list -->
+
+    <!-- inline CSS property -->
+    <!-- list  -->
+    <ul style="list-style: square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+
+    <!-- Nested list -->
+    <ol type="1">
+        <li>
+            Coffee
+            <ol type="a">
+                <li>Expressoo</li>
+                <li>Cold Coffee</li>
+                <li>Americano</li>
+            </ol>    
+        </li>
+        <li>
+            Tea
+            <ol type="I">
+                <li>Green Tea</li>
+                <li>Masala Tea</li>
+                <li>Black Tea</li>
+            </ol>
+        </li>
+        <li>
+            Water
+            <ol>
+                <li>Cold Water</li>
+                <li>Hot Water</li>
+                <li>Normal Water</li>
+            </ol>
+        </li>
+    </ol>
 </body>
 </html>
