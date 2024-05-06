@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-size: 22px;
+    }
+
+    /* Untis */
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        /* 
+            1 rem = 16px(by default)
+            rem : root's em (= font-size)
+        */
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .box{
+        /* font-size: 30px; */
+
+        /* font-size: 2rem; */
+    }
+
+    .outer-para{
+        font-size: 40px;
+        /* font-size: 16px; */
+        /* font-size: 1rem; */
+        /* line-height: 2rem; */
+        /* line-height: 2em; */
+        line-height: 1.5em;
+
+        /* 
+            em: multiple of its own font-size only when it is used in a property other than 'font-size'
+            em: If em is used in the 'font-size' property then it is multiple of parent's font-size.
+        */
+    }
+
+    .second-box{
+        /* font-size: 1rem; */
+        font-size: 22px;
+    }
+
+    .third-box{
+        /* font-size: 20px; */
+
+        /* font-size: 1.5rem; 1.5 * 16 = 24 */
+    }
+
+    .inner-para{
+        /* font-size: 1.5rem; */
+        /* line-height: 1.3rem; = > 21 */
+        line-height: 1.3em;
+    }
+
+    #btn1{
+        font-size: 1.5rem;
+        /* font-size: 30px; */
+        /* font-size: 1em; */
+/* 
+        height: 30px;
+        width: 100px; */
+
+        height: 1.5em;
+        width: 6em;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, incidunt!</h1>
+
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ad.</h2>
+
+    <div class="box">
+        <div class="second-box">
+            <p class="outer-para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam facere nulla molestiae. Dolorum voluptatibus quibusdam itaque? Nemo autem soluta sed modi rem tempore incidunt earum eligendi excepturi delectus sint vero commodi suscipit et sapiente porro, iure veritatis cupiditate beatae assumenda voluptates eveniet at voluptatum? Fugiat nesciunt corrupti dolore blanditiis ea?
+            </p>
+            <div class="third-box">
+                <p class="inner-para">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis hic veritatis corrupti culpa sunt ea iste, nobis ullam quaerat, quibusdam ad tenetur deserunt inventore totam porro. Provident excepturi amet asperiores?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn1">
+        Button1
+    </button>
+    <button class="btn2">
+        Button2
+    </button>
+    <button class="btn3">
+        Button3
+    </button>
+</body>
+</html>
