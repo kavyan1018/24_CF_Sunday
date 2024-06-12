@@ -1,145 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    div{
-        display: flex;
-    }
-    .main-nav{
-        font-family: sans-serif;
-        font-size: 2rem;       
-    }
-    .left-side{
-        margin: 2rem 5rem;
-    }
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .right-side{
-        margin: 2rem;
-        /* border: 1px solid;   */
-        margin-left: 25rem;
-    }
-    p{
-        margin-right: 3rem;
-    }
-    .Login{
-        position: relative;
-        padding: 0.6rem 2rem;
-        background-color: transparent;
-        color: white;
-        border: solid white 2px;
-        /* margin-top:  1rem; */
-        font-size: 1.2rem;
-        border-radius: 5px;
-    }
+        body {
+            background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-deer-under-the-moonlight-picture-image_1167690.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
 
-    body{
-        background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-deer-under-the-moonlight-picture-image_1167690.jpg);
-        
-        color: white;
-    }
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 2rem;
+        }
 
-    .center{
-        border: solid 4px white;
-        font-family: cursive;
-        height: 400px;
-        width: 400px;
-        border-radius: 10px;
-        align-items: center;
-        margin: auto;
-        padding: auto;
-        color: white;
-        /* position: relative; */
-    }
+        .main-nav p {
+            margin: 0 1rem;
+            cursor: pointer;
+        }
 
-    .container {
-            background-color: #fff;
+        .Login {
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            color: white;
+            border: solid white 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .center {
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            width: 400px;
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         h2 {
-            text-align: center;
-            margin-bottom: 300px;
-            margin-left: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            text-align: left;
         }
 
-        input[type="email"],
-        input[type="password"] {
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
             width: 100%;
-            padding: 10px;
+            padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 5px;
-            /* box-sizing: border-box; */
         }
 
-        input[type="checkbox"] {
-            margin-right: 5px;
+        .form-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        .forgot-password a {
+            color: white;
+            text-decoration: none;
         }
 
         button {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 0.5rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
         }
 
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .forgot-password {
-            text-align: right;
-            margin-bottom: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
         .register {
-            text-align: center;
             margin-top: 1rem;
         }
-</style>
+
+        .register a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
 <body>
     <!-- nav bar -->
     <div class="main-nav">
         <div class="left-side">
             <p>Logo</p>
         </div>
-
         <div class="right-side">
             <p>Home</p>
             <p>About</p>
             <p>Services</p>
-            <p>contact</p>
+            <p>Contact</p>
             <p class="Login">Login</p>
         </div>
     </div>
 
-     <br><br><br>
-
-     <div class="center">
-
-             <h2>Login</h2>
+    <div class="center">
+        <h2>Login</h2>
         <form>
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -158,10 +155,10 @@
             </div>
             <button type="submit">Login</button>
             <div class="register">
-                Don't have an account? &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Register</a>
+                Don't have an account? <a href="#">Register</a>
             </div>
         </form>
-
-     </div>
+    </div>
 </body>
+
 </html>
