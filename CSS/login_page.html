@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        display: flex;
+    }
+    .main-nav{
+        font-family: sans-serif;
+        font-size: 2rem;       
+    }
+    .left-side{
+        margin: 2rem 5rem;
+    }
+
+    .right-side{
+        margin: 2rem;
+        /* border: 1px solid;   */
+        margin-left: 25rem;
+    }
+    p{
+        margin-right: 3rem;
+    }
+    .Login{
+        position: relative;
+        padding: 0.6rem 2rem;
+        background-color: transparent;
+        color: white;
+        border: solid white 2px;
+        /* margin-top:  1rem; */
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    body{
+        background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-deer-under-the-moonlight-picture-image_1167690.jpg);
+        
+        color: white;
+    }
+
+    .center{
+        border: solid 4px white;
+        font-family: cursive;
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        color: white;
+        /* position: relative; */
+    }
+
+    .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 300px;
+            margin-left: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* box-sizing: border-box; */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 1rem;
+        }
+</style>
+<body>
+    <!-- nav bar -->
+    <div class="main-nav">
+        <div class="left-side">
+            <p>Logo</p>
+        </div>
+
+        <div class="right-side">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>contact</p>
+            <p class="Login">Login</p>
+        </div>
+    </div>
+
+     <br><br><br>
+
+     <div class="center">
+
+             <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register">
+                Don't have an account? &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Register</a>
+            </div>
+        </form>
+
+     </div>
+</body>
+</html>
