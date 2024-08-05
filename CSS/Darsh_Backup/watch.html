@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ignore the above code */
+
+    body{
+        font-family: Poppins,serif;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .card{
+        border: solid 3px;
+        width: 205px;
+        margin: 2rem auto;
+    }
+
+    .upper-card{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .best-seller{
+        background-color: #ff9457;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        padding: 0.2rem 1.1rem;
+        font-size: 14px;
+        color: white;
+        border-top-right-radius: 1rem; 
+        border-bottom-right-radius: 1rem;    
+    }
+
+    .offer{
+        background-color: #ff9457;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        padding-top: 20px;
+        padding-left: 9px;
+        font-family: "Red Hat Display",monospace;
+        font-weight: 600;
+        color: white;
+        line-height: 1em;
+    }
+
+    .product-img{
+        width: 100%;
+    }        
+
+    .product-name{
+        font-family: "Red Hat Display",monospace;
+        color: black;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .product-type{
+        color: #9b9696;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .pricing{
+        font-family: "Red Hat Display",monospace;
+        font-weight: 500;
+    }
+
+    .mrp{
+        font-weight: 400;
+        color: #9b9696;
+        font-size: 0.9rem;
+        text-decoration: line-through;
+    }
+</style>
+<body>
+    <div class="card">
+
+        <div class="upper-card">
+            <div class="best-seller">Best seller</div>
+            <div class="offer">50% off</div>
+            <img class="product-img" src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?cs=srgb&dl=pexels-alexazabache-3766111.jpg&fm=jpg" alt="" height="300px">
+        </div>
+        
+        <div class="lower-card">
+            <a href="#" class="product-name">Fastrack Reflex Play+ Black : Intuitive Health and BT...</a>
+            <p class="product-type">Unisex Watch</p>
+            <p class="pricing">₹ 4,995 <span class="mrp">₹ 9,995</span></p>
+        </div>
+
+    </div>
+</body>
+</html>
