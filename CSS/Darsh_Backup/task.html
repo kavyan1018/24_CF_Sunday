@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .creator-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .creator-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+    
+    .creator-info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .creator-info p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .highlight {
+      grid-column: span 2;
+      background: #f0f9ff;
+    }
+    
+    .large-text {
+      font-size: 72px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336cf3b13a9ce6a174c9_Ronne.png" alt="Laticia Brice" class="creator-img">
+        <div class="creator-info">
+          <h3>Laticia Brice</h3>
+          <p>since 2018</p>
+        </div>
+      </div>
+      
+      <div class="large-text">100K+</div>
+      
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336b017ecaf56d35570c_Jay%20Clouse.png" alt="Jay Clouse" class="creator-img">
+        <div class="creator-info">
+          <h3>Jay Clouse</h3>
+          <p>since 2020</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="large-text">creators</div>
+    
+    <div class="grid">
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336cd3e6dadb6405645f_Frame%2011085.png" alt="Sade Kelly" class="creator-img">
+        <div class="creator-info">
+          <h3>Sade Kelly</h3>
+          <p>since 2021</p>
+        </div>
+      </div>
+      
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336c212d2a43ad80960b_Frame%2011085-1.png" alt="Teri Ijeoma" class="creator-img">
+        <div class="creator-info">
+          <h3>Teri Ijeoma</h3>
+          <p>since 2016</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="large-text">choose</div>
+    
+    <div class="grid">
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336cfc0d267fa1e2a236_Sade.png" alt="Chris Do" class="creator-img">
+        <div class="creator-info">
+          <h3>Chris Do</h3>
+          <p>since 2017</p>
+        </div>
+      </div>
+      
+      <div class="creator-card">
+        <img src="https://cdn.prod.website-files.com/65393b768d06ee4c16d24a0b/6693336be76029302ea1a0a7_Teri.png" alt="Dara Denney" class="creator-img">
+        <div class="creator-info">
+          <h3>Dara Denney</h3>
+          <p>since 2023</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="large-text">Teachable</div>
+  </div>
+</body>
+</html>
