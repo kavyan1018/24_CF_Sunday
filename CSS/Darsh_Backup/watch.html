@@ -3,100 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, serif;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9457;
+        }
+
+        /* Existing Card Styles */
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            border: solid 3px;
+            width: 205px;
+            margin: 2rem auto;
+        }
+
+        .upper-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .best-seller {
+            background-color: #ff9457;
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            padding: 0.2rem 1.1rem;
+            font-size: 14px;
+            color: white;
+            border-top-right-radius: 1rem; 
+            border-bottom-right-radius: 1rem;    
+        }
+
+        .offer {
+            background-color: #ff9457;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            padding-top: 20px;
+            padding-left: 9px;
+            font-family: "Red Hat Display", monospace;
+            font-weight: 600;
+            color: white;
+            line-height: 1em;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }        
+
+        .lower-card {
+            padding: 1rem;
+        }
+
+        .product-name {
+            font-family: "Red Hat Display", monospace;
+            color: black;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+
+        .product-type {
+            color: #9b9696;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing {
+            font-family: "Red Hat Display", monospace;
+            font-weight: 500;
+        }
+
+        .mrp {
+            font-weight: 400;
+            color: #9b9696;
+            font-size: 0.9rem;
+            text-decoration: line-through;
+        }
+    </style>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* Ignore the above code */
-
-    body{
-        font-family: Poppins,serif;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    .card{
-        border: solid 3px;
-        width: 205px;
-        margin: 2rem auto;
-    }
-
-    .upper-card{
-        position: relative;
-        overflow: hidden;
-    }
-
-    .best-seller{
-        background-color: #ff9457;
-        position: absolute;
-        top: 15px;
-        left: 0px;
-        padding: 0.2rem 1.1rem;
-        font-size: 14px;
-        color: white;
-        border-top-right-radius: 1rem; 
-        border-bottom-right-radius: 1rem;    
-    }
-
-    .offer{
-        background-color: #ff9457;
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        position: absolute;
-        right: -12px;
-        top: -12px;
-        padding-top: 20px;
-        padding-left: 9px;
-        font-family: "Red Hat Display",monospace;
-        font-weight: 600;
-        color: white;
-        line-height: 1em;
-    }
-
-    .product-img{
-        width: 100%;
-    }        
-
-    .product-name{
-        font-family: "Red Hat Display",monospace;
-        color: black;
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-
-    .product-type{
-        color: #9b9696;
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-
-    .pricing{
-        font-family: "Red Hat Display",monospace;
-        font-weight: 500;
-    }
-
-    .mrp{
-        font-weight: 400;
-        color: #9b9696;
-        font-size: 0.9rem;
-        text-decoration: line-through;
-    }
-</style>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">ShopSmart</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="card">
-
         <div class="upper-card">
             <div class="best-seller">Best seller</div>
             <div class="offer">50% off</div>
-            <img class="product-img" src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?cs=srgb&dl=pexels-alexazabache-3766111.jpg&fm=jpg" alt="" height="300px">
+            <img class="product-img" src="/api/placeholder/205/200" alt="Smart Watch">
         </div>
         
         <div class="lower-card">
@@ -104,7 +161,6 @@
             <p class="product-type">Unisex Watch</p>
             <p class="pricing">₹ 4,995 <span class="mrp">₹ 9,995</span></p>
         </div>
-
     </div>
 </body>
 </html>
