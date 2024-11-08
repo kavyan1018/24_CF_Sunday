@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        height: 120px;
+        width: 320px;
+        background-color: lightgreen;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .first-r, .second-r, .third-r, .fourth-r {
+        display: flex;
+        /* justify-content: space-between; */
+        margin-left: 18rem;
+    }
+
+    .first-r {
+        margin-top: 7rem;
+    }
+
+    #box1 {
+        background-color: indianred;
+    }
+
+    #box3 {
+        background-color: skyblue;
+    }
+
+    #box4{
+        background-color: blueviolet;
+    }
+
+    #box5{
+        background-color: yellow;
+    }
+
+    #box6{
+        background-color: cyan;
+    }
+
+    #box7{
+        background-color: darkgoldenrod;
+    }
+
+    #box8{
+        background-color: darkgreen;
+    }
+
+    #box9{
+        background-color: darkmagenta;
+    }
+
+    #box10{
+        background-color: darkorange;
+    }
+
+    #box11{
+        background-color: darkred;
+    }
+
+    #box12{
+        background-color: darkslategray;
+    }
+
+
+    @media screen and (max-width: 1350px) {
+        .box {
+            height: 100px;
+            width: 250px;
+        }
+    }
+
+    @media screen and (max-width: 530px) {
+        
+        .first-r, .second-r, .third-r, .fourth-r {
+            display: block;
+            margin-left: 4.5rem;
+        }
+
+        .box {
+            height: 200px;
+            width: 400px;
+            margin-bottom: 1rem;
+        }
+    }
+
+</style>
+
+<body>
+
+    <div class="first-r">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+    <div class="second-r">
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+    </div>
+    <div class="third-r">
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+        <div class="box" id="box9"></div>
+    </div>
+    <div class="fourth-r">
+
+        <div class="box" id="box10"></div>
+        <div class="box" id="box11"></div>
+        <div class="box" id="box12"></div>
+    </div>
+
+</body>
+
+</html>
