@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        display: grid;
+        /* grid-template-columns: 100px 200px 100px 100px; */
+        /* grid-template-columns: 25% 65% 25%; */
+        /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+        /* grid-template-columns: repeat(5, 1fr); */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .card{
+        border: solid;
+        border-radius: 5px;
+    }
+
+    #c1{
+        grid-column: span 2;
+    }
+
+    #c2{
+        /* grid-column: span 2; */
+    }
+
+     #c3{
+        grid-row: span 2;
+    }
+
+    #c5{
+        grid-column: span 2;
+    }
+
+</style>
+
+<body>
+    <!-- What is fr in grid ? -->
+    <!-- fr is a unit of the available space in the grid container. -->
+
+    <div class="container">
+        <div class="card" id="c1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab totam nam cupiditate aperiam excepturi! Facilis non obcaecati ducimus corrupti recusandae eos nostrum fugit unde. Dolores odio ipsum cum laborum distinctio reiciendis, pariatur dolore placeat repellat quia aut omnis porro, aperiam eius provident voluptatum totam dolorem sed rem et neque, quidem voluptatibus! Ipsum, et iure repellendus similique architecto, deserunt eveniet esse beatae necessitatibus, facilis nihil ipsam id tenetur vel excepturi. Eaque temporibus corporis quod nobis autem voluptatibus soluta asperiores harum, labore sapiente doloremque voluptates adipisci, dignissimos, vitae quidem sed accusamus totam iste id! Asperiores hic aperiam cumque assumenda debitis, impedit delectus ipsam ut? Deleniti voluptatibus officia maxime amet dolorem voluptas fugiat, iste eveniet in veritatis cupiditate et blanditiis ratione aliquam modi temporibus accusantium perferendis quae doloremque recusandae iusto similique molestiae ad molestias? Rem tempora labore error molestias assumenda quae ratione deleniti dolor. Nulla provident ipsam saepe inventore, ipsum architecto nobis odit ab delectus, iste corporis repellat voluptate, deserunt quisquam voluptates omnis a perferendis eveniet reprehenderit ratione! Nobis harum illo facilis minus excepturi sit ipsa, labore culpa aspernatur laboriosam consequatur earum, laudantium rem laborum dolor quia accusantium. Dolorum velit voluptas quibusdam eius delectus rerum. Accusamus dicta quod maiores ipsam harum quae?
+        </div>
+        <div class="card" id="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus corrupti cupiditate quod optio? Sit dignissimos suscipit deserunt assumenda? Inventore minus deserunt eligendi autem, amet molestiae impedit aliquam quis, nam sit fugiat soluta recusandae necessitatibus voluptatum aspernatur optio maiores veritatis dolorum error ipsum iusto atque perferendis! Nostrum illum possimus eaque, praesentium inventore sapiente, voluptatem magnam eveniet laudantium nam in beatae odit quasi, neque sunt quam id quaerat maiores vel temporibus corporis cupiditate aliquid? Fuga temporibus voluptatum doloribus quia rerum saepe, sint ut possimus expedita dolores eveniet repudiandae fugit illum a pariatur placeat aut voluptatibus sunt nuuam quibusdam id amet consequatur.</div>
+
+        <div class="card" id="c3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet voluptatem laborum, quasi aspernatur sint tempore facere aperiam assumenda perferendis eius inventore ut non suscipit cumque amet iste ullam adipisci obcaecati odit illum, ipsum sequi itaque! Esse, amet, iste voluptate est ipsam consequatur, odio neque earum nostrum repudiandae doloremque deserunt nemo eos aliquid veniam reiciendis perferendis aut fuga quos assumenda eveniet doloribus delectus. Aliquam eos vitae minima hic doloremque cum maxime officia vel debitis molestias. Excepturi hic labore aliquid deserunt modi, in quam qui voluptas amet distinctio quibusdam dignissimos temporibus perspiciatis iusto iure at, dicta maiores vitae ullam itaque sit nostrum autem! Quae quia nihil exercitationem perspiciatis nemo maiores earum qui eligendi odio ab sapiente, recusandae minima assumenda magni eveniet at dignissimos adipisci dicta sint totam! Consequuntur, hic error? Quibusdam voluptas omnis adipisci ullam? Officia recusandae tenetur amet quae hic fugit dolore dolorum eos impedit voluptatum temporibus nisi laboriosam sit, culpa ea qui dignissimos aut! Maxime ipsam, fugiat enim exercitationem consectetur est magnam in non corporis? Asperiores repudiandae voluptatum dolorem ipsam temporibus fugiat maiores! Impedit, delectus nisi suscipit ex unde eum facilis aspernatur culpa officia vero molestiae, alias labore. Soluta maiores mollitia totam eum officiis aliquam dolorum maxime dignissimos esse ratione aperiam sunt eaque cumque vero dolor, iusto temporibus nulla enim et, quae facilis deserunt. Illo magnam accusamus consequuntur. Pariatur officiis nulla ipsum nisi suscipit iusto praesentium explicabo aut sint deserunt dolore tempore accusantium assumenda corrupti perferendis quo aliquam magnam asperiores dignissimos delectus culpa nesciunt, possimus quisquam doloribus? Modi, id.</div>
+        
+        <div class="card" id="c4">Card 4</div>
+        
+        <div class="card" id="c5">Card 5</div>
+    </div>
+</body>
+</html>
